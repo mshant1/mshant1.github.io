@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="noindex, nofollow, noarchive, nosnippet" />
+
+	<!-- Favicons
+================================================== -->
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<!-- / Favicons
+================================================== -->
+
+	<!-- >> CSS
+============================================================================== -->
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Google Web Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<!-- Font Awesome -->
+	<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Nivo Lightbox -->
+	<link href="vendor/nivo-lightbox/nivo-lightbox.css" rel="stylesheet">
+	<link rel="stylesheet" href="vendor/nivo-lightbox/themes/default/default.css" type="text/css">
+	<!-- /Nivo Lightbox -->
+	<!-- Perfect ScrollBar -->
+	<link href="vendor/perfect-scrollbar/css/perfect-scrollbar.min.css" rel="stylesheet">
+	<!-- owl carousel -->
+	<link href="vendor/owl.carousel/owl-carousel/owl.carousel.css" rel="stylesheet">
+	<link href="vendor/owl.carousel/owl-carousel/owl.theme.css" rel="stylesheet">
+	<!-- Main Styles -->
+	<link href="css/styles.css" rel="stylesheet">
+
+	<!-- >> /CSS
+============================================================================== -->
+	<style id="holderjs-style" type="text/css"></style>
+	<script type="text/javascript" charset="UTF-8"
+		src="https://maps.google.com/maps-api-v3/api/js/42/9/common.js"></script>
+	<script type="text/javascript" charset="UTF-8"
+		src="https://maps.google.com/maps-api-v3/api/js/42/9/util.js"></script>
+</head>
+
+<body>
+	<!-- Page Loader
+========================================================= -->
+	<div class="loader-container" id="page-loader">
+		<div class="loading-wrapper">
+			<div class="loader-animation" id="loader-animation">
+				<span class="loader"><span class="loader-inner"></span></span>
+			</div>
+			<!-- Edit With Your Name -->
+			<div class="loader-name" id="loader-name">
+				<strong>Loading...</strong>
+			</div>
+			<!-- /Edit With Your Name -->
+			<!-- Edit With Your Job -->
+			<p class="loader-job" id="loader-job">Advanced CV</p>
+			<!-- /Edit With Your Job -->
+		</div>
+	</div>
+	<!-- /End of Page loader
+  ========================================================= -->
+
+	<!-- Main Content
+================================================== -->
+	<section id="body" class="">
+
+		<div class="container">
+
+			<!-- MAIN MENU -->
+			<div class="main-menu" id="main-menu">
+				<ul class="main-menu-list">
+					<li><a href="#page-resume" class="link-home menuActive">Home</a></li>
+					<li><a href="#page-resume" class="link-page">Background</a></li>
+					<li><a href="#page-skills" class="link-page">Experties</a></li>
+					<li><a href="#page-sop" class="link-page">SOP</a></li>
+					<li><a href="#page-contact" class="link-page">Contact</a></li>
+					<li><a href="../fa/">رزومه فارسی</a></li>
+				</ul>
+			</div>
+			<!-- /MAIN MENU -->
+
+			<!-- SECTION: vCard Body  -->
+			<div class="section-vcardbody section-home ps-container" id="section-home">
+
+				<a href="../fa/" id="cv-switch" style="display: none;">رزومه فارسی</a>
+
+				<!-- Profile pic-->
+				<div class="vcard-profile-pic">
+					<img id="profile2" alt="" class="">
+					<img id="profile1" class="profileActive" alt="">
+				</div>
+				<!-- /Profile pic -->
+				<!-- Description -->
+				<div class="vcard-profile-description">
+					<!-- Profile title -->
+					<h1 class="profile-title">Hola! I'm <span id="my-profile-name" class="color1"></span></h1>
+					<h2 id="my-profile-subtitle" class="profile-subtitle"></h2>
+					<!-- /Profile Title -->
+					<!-- Description Text -->
+					<hr class="hr1">
+					<div class="vcard-profile-description-text">
+						<p id="my-profile-desc"></p>
+					</div>
+					<!--/ Description Text -->
+					<!-- Description feature -->
+					<div class="vcard-profile-description-feature">
+						<!-- item -->
+						<div class="vcard-profile-description-ft-item">
+							<p id="my-profile-desc-ft"></p>
+						</div>
+						<!-- item -->
+					</div>
+					<!-- /Description feature -->
+				</div>
+				<!-- /Description -->
+				<!-- Footer -->
+			</div>
+			<!-- /SECTION: vCard Body  -->
+
+			<!-- PAGE: RESUME -->
+			<div class="section-vcardbody section-page ps-container ps-active-y" id="page-resume">
+
+				<!-- SECTION: Education -->
+				<div class="section-education">
+					<!-- Section title -->
+					<h2 class="section-title">Background</h2>
+					<!-- /Section title -->
+
+					<h2 class="section-title2"><i class="fa fa-university"></i>&nbsp; Education</h2>
+
+					<!-- Resume Item -->
+					<div class="resume-item">
+						<!-- Graduation title -->
+						<h3 id="edu1-title" class="section-item-title-1"></h3>
+						<!-- /Graduation title -->
+						<!-- Graduation time -->
+						<h4 id="edu1-date" class="graduation-time"></h4>
+						<!-- /Graduation time -->
+						<!-- content -->
+						<div class="graduation-description">
+							<p id="edu1-desc"></p>
+						</div>
+						<!-- /Content -->
+					</div>
+					<!-- /Resume Item -->
+
+					<!-- Resume Item -->
+					<div class="resume-item">
+						<!-- Graduation title -->
+						<h3 id="edu2-title" class="section-item-title-1"></h3>
+						<!-- /Graduation title -->
+						<!-- Graduation time -->
+						<h4 id="edu2-date" class="graduation-time"></h4>
+						<!-- /Graduation time -->
+						<!-- content -->
+						<div class="graduation-description">
+							<p id="edu2-desc"></p>
+						</div>
+						<!-- /Content -->
+					</div>
+					<!-- /Resume Item -->
+				</div>
+				<!--/ SECTION: Education -->
+
+				<!-- SECTION: WORK EXPERIENCE -->
+				<div class="section-education">
+
+					<h2 class="section-title2"><i class="fa fa-flag"></i>&nbsp; Experience</h2>
+
+					<!-- Resume Item -->
+					<div class="resume-item">
+						<!-- Work Place -->
+						<h3 id="job1-title" class="section-item-title-1"></h3>
+						<!-- /Work Place -->
+						<!-- Job Time -->
+						<h4 id="job1-date" class="job"></h4>
+						<!-- /Job Time-->
+						<!-- content -->
+						<div class="graduation-description">
+							<p id="job1-desc"></p>
+						</div>
+						<!-- /Content -->
+					</div>
+					<!-- /Resume Item -->
+
+					<!-- Resume Item -->
+					<div class="resume-item">
+						<!-- Work Place -->
+						<h3 id="job2-title" class="section-item-title-1"></h3>
+						<!-- /Work Place -->
+						<!-- Job Time -->
+						<h4 id="job2-date" class="job"></h4>
+						<!-- /Job Time-->
+						<!-- content -->
+						<div class="graduation-description">
+							<p id="job2-desc"></p>
+						</div>
+						<!-- /Content -->
+					</div>
+					<!-- /Resume Item -->
+
+
+				</div>
+				<!--/ SECTION: WORK EXPERIENCE -->
+
+				<div>
+					<!-- Quote -->
+					<p class="footer-quote">"The only thing that overcomes hard luck, is hard work."<br><i>Harry Golden</i></p>
+					<!-- /Quote -->
+				</div>
+
+			</div>
+			<!-- /PAGE: RESUME  -->
+
+			<!-- SECTION: SKILLS-->
+			<div class="section-vcardbody section-page ps-container ps-active-y" id="page-skills">
+				<div class="section-skills">
+
+					<!-- Section title -->
+					<h2 class="section-title">Experties</h2>
+					<!-- /Section title -->
+
+
+					<!-- Subtitle -->
+					<h3 class="section-item-title-2"><i class="fa fa-users"></i>&nbsp;&nbsp; Social Skills</h3>
+					<!-- /Subtitle -->
+
+					<!-- Skils List -->
+					<ul class="skills-list">
+						<!-- item-list -->
+						<li>
+							<div class="progress">
+								<div class="progress-bar" role="progressbar" data-percent="70%" style="width: 70%;">
+									<span class="sr-only">70%</span>
+								</div>
+								<span class="progress-type">Interaction</span>
+								<span class="progress-completed">70%</span>
+							</div>
+						</li>
+						<!-- /item list -->
+						<!-- item-list -->
+						<li>
+							<div class="progress">
+								<div class="progress-bar progress-bar-2" role="progressbar" data-percent="85%"
+									style="width: 85%;">
+									<span class="sr-only">85%</span>
+								</div>
+								<span class="progress-type">Leadership</span>
+								<span class="progress-completed">85%</span>
+							</div>
+						</li>
+						<!-- /item list -->
+						<!-- item-list -->
+						<li>
+							<div class="progress">
+								<div class="progress-bar progress-bar-3" role="progressbar" data-percent="85%"
+									style="width: 85%;">
+									<span class="sr-only">85%</span>
+								</div>
+								<span class="progress-type">Confidence</span>
+								<span class="progress-completed">85%</span>
+							</div>
+						</li>
+						<!-- /item list -->
+					</ul>
+					<!-- /Skils List -->
+
+					<!-- Subtitle -->
+					<h3 class="section-item-title-2"><i class="fa fa-laptop"></i>&nbsp;&nbsp; Software Skills</h3>
+					<!-- /Subtitle -->
+
+					<!-- Skils List -->
+					<ul class="skills-list">
+						<!-- item-list -->
+						<li>
+							<div class="progress">
+								<div class="progress-bar" data-percent="95%" role="progressbar" style="width: 95%;">
+									<span class="sr-only">95%</span>
+								</div>
+								<span class="progress-type">Linux</span>
+								<span class="progress-completed">95%</span>
+							</div>
+						</li>
+						<!-- /item list -->
+						<!-- item-list -->
+						<li>
+							<div class="progress">
+								<div class="progress-bar progress-bar-2" data-percent="95%" role="progressbar"
+									style="width: 95%;">
+									<span class="sr-only">95%</span>
+								</div>
+								<span class="progress-type">Network</span>
+								<span class="progress-completed">95%</span>
+							</div>
+						</li>
+						<!-- /item list -->
+						<!-- item-list -->
+						<li>
+							<div class="progress">
+								<div class="progress-bar progress-bar-3" data-percent="80%" role="progressbar"
+									style="width: 80%;">
+									<span class="sr-only">80%</span>
+								</div>
+								<span class="progress-type">Windows</span>
+								<span class="progress-completed">80%</span>
+							</div>
+						</li>
+						<!-- /item list -->
+					</ul>
+					<!-- /Skils List -->
+
+					<!-- Subtitle -->
+					<h3 class="section-item-title-2"><i class="fa fa-code"></i>&nbsp;&nbsp; Coding Skills</h3>
+					<!-- /Subtitle -->
+
+					<!-- Skils List -->
+					<ul class="skills-list">
+						<!-- item-list -->
+						<li>
+							<div class="progress">
+								<div class="progress-bar" data-percent="80%" role="progressbar" style="width: 80%;">
+									<span class="sr-only">80%</span>
+								</div>
+								<span class="progress-type">HTML5 / CSS3</span>
+								<span class="progress-completed">80%</span>
+							</div>
+						</li>
+						<!-- /item list -->
+						<!-- item-list -->
+						<li>
+							<div class="progress">
+								<div class="progress-bar progress-bar-2" data-percent="60%" role="progressbar"
+									style="width: 60%;">
+									<span class="sr-only">60%</span>
+								</div>
+								<span class="progress-type">Python</span>
+								<span class="progress-completed">60%</span>
+							</div>
+						</li>
+						<!-- /item list -->
+						<!-- item-list -->
+						<li>
+							<div class="progress">
+								<div class="progress-bar progress-bar-3" data-percent="40%" role="progressbar"
+									style="width: 40%;">
+									<span class="sr-only">40%</span>
+								</div>
+								<span class="progress-type">Javascript</span>
+								<span class="progress-completed">40%</span>
+							</div>
+						</li>
+						<!-- /item list -->
+					</ul>
+					<!-- /Skils List -->
+
+				</div>
+			</div>
+			<!-- /SECTION: SKILLS  -->
+
+
+			<!-- SECTION: SOP-->
+			<div class="section-vcardbody section-page ps-container ps-active-y" id="page-sop">
+				<div class="section-sop">
+
+					<!-- Section title -->
+					<h2 class="section-title"><i class="fa fa-university"></i>&nbsp; SOP</h2>
+					<!-- /Section title -->
+
+					<!-- Contact infos -->
+					<div class="sop-main" id="sop">
+					</div>
+					<!-- /Contact infos -->
+				</div>
+			</div>
+			<!-- /SECTION: SOP  -->
+
+
+			<!-- SECTION: CONTACT-->
+			<div class="section-vcardbody section-page ps-container ps-active-y" id="page-contact">
+				<div class="section-contact">
+
+					<!-- Section title -->
+					<h2 class="section-title">Contact</h2>
+					<!-- /Section title -->
+
+					<div class="map">
+						<div class="map-overlay"></div>
+						<iframe id="gmap" height="250" style="border:0" allowfullscreen=""></iframe>
+					</div>
+
+					<!-- Contact infos -->
+					<div class="contact-infos">
+						<h4 class="contact-subtitle-1"><i class="fa fa-map"></i>&nbsp; Address</h4>
+						<p id="address"></p>
+						<h4 class="contact-subtitle-1"><i class="fa fa-phone-square"></i>&nbsp; Tel</h4>
+						<p id="tel"></p>
+						<h4 class="contact-subtitle-1"><i class="fa fa-envelope"></i>&nbsp; Email</h4>
+						<p id="my-email"></p>
+					</div>
+					<!-- /Contact infos -->
+
+
+
+
+
+					<script>
+						function sendmailajax() {
+							$("#showres").html("<center><img src='img/load.gif' /></center>");
+							var name = $('#name').val();
+							var email = $('#email').val();
+							var subject = $('#subject').val();
+							var message = $('#message').val();
+							$.ajax({
+								type: 'POST',
+								url: 'php/contact-form.php',
+								data: "name=" + name + "&email=" + email + "&subject=" + subject + "&message=" + message,
+								success: function (data) {
+									$('#showres').html(data)
+								}
+							});
+						}                    
+					</script>
+				</div>
+			</div>
+			<!-- /SECTION: CONTACT  -->
+		</div>
+
+	</section>
+	<!-- /Main Content
+================================================== -->
+
+
+	<!-- >> JS
+============================================================================== -->
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="vendor/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="vendor/validate.js"></script>
+	<!-- Holder JS -->
+	<script src="vendor/holder.js"></script>
+	<!-- Modal box-->
+	<script src="vendor/nivo-lightbox/nivo-lightbox.min.js"></script>
+	<!-- /Modal Box -->
+	<!-- Perfect ScrolBar -->
+	<script src="vendor/perfect-scrollbar/js/min/perfect-scrollbar.jquery.min.js"></script>
+	<!-- /Perfect ScrolBar -->
+	<!-- Owl Caroulsel -->
+	<script src="vendor/owl.carousel/owl-carousel/owl.carousel.js"></script>
+	<!-- Google Maps -->
+	<script src="https://maps.google.com/maps/api/js?sensor=false"></script>
+	<!-- Cross-browser -->
+	<script src="vendor/cross-browser.js"></script>
+	<!-- Main Scripts -->
+	<script src="js/main.js"></script>
+
+
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+  <script src="vendor/html5shiv.js"></script>
+  <script src="vendor/respond.min.js"></script>
+<![endif]-->
+	<!-- >> /JS
+============================================================================= -->
+
+
+
+</body>
+
+</html>
